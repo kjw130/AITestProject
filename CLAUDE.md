@@ -7,7 +7,7 @@
 - No npm, no build tools
 
 ## Folder Structure
-/public      → index.php, assets
+/public      → index.php, assets (js, css)
 /src         → PHP classes and logic
 /db          → SQLite database file + schema
 /tests       → test files
@@ -21,10 +21,10 @@
 - No over-engineering
 
 ## Agent Memory
-- Product goal: [FILL IN]
-- Target user: [FILL IN]
-- MVP definition: [FILL IN]
-- Non-goals: [FILL IN]
+- Product goal: [FILL IN — what this app does]
+- Target user: [FILL IN — who uses it]
+- MVP definition: [FILL IN — simplest working version]
+- Non-goals: [FILL IN — what to exclude]
 
 ## Testing
 - Run `php tests/run.php` after each change

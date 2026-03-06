@@ -1,20 +1,20 @@
 <?php
-$db = new PDO('sqlite:db/database.sqlite');
-
-$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-$db->exec("
-    CREATE TABLE IF NOT EXISTS users (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name TEXT
-    )
-");
-
-$db->exec("INSERT INTO users (name) VALUES ('Test User')");
-
-$result = $db->query("SELECT * FROM users");
-
-foreach ($result as $row) {
-    echo $row['name'] . "<br>";
-}
+// Entry point — serves the main HTML page
+// Add server-side logic or data fetching here if needed
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>App Name</h1>
+        <div id="content"></div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
